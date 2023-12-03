@@ -1,7 +1,7 @@
-export default function Page() {
-  return <p>Home Page</p>;
-}
+import Layout from "@/components/Layout";
 
-Page.getLayout = function getLayout(page) {
-  return <div className="container">{page}</div>;
-};
+export default function Page() {
+  return <Layout title="Home">
+    home page
+  </Layout>;
+}
